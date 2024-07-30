@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- import bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- import css file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Slice & Spice pizzeria</title>
+  </head>
+  <body style="background-image: url(image/b4.jpg); color: rgb(207, 210, 212)">
+    <!-- Start nav -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+    >
+      <div class="container-fluid">
+        <a>
+          <img
+            src="image/icon.jpg"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          <!-- <span class="pizzeriaName" style="color: aliceblue">
+            <center>Slice/spice <br />pizzeria</center>
+          </span> -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="menu.html">Menu</a>
+            <a class="nav-link" href="msg.html">MSG</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="order.html">Order</a>
+            <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+    <!--start carsoul-->
+
+    <section class="home-slider owl-carousel img">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            data-bs-interval="1000"
+            style="background-image: url(image/1.jpg)"
+          >
+            <div class="container mt-5 ml-md-4">
+              <div class="col-md-6 col-sm-12 ftco-animate">
+                <h1 class="mb-4">Slice & Spice pizzeria</h1>
+                <h1 class="mb-4">Delicious Italian Pizza</h1>
+                <p>
+                  <a href="order.html" class="btn btn-dark p-3 px-xl-4 py-xl-3"
+                    >Order Now</a
+                  >
+                  <a href="menu.html" class="btn btn-dark p-3 px-xl-4 py-xl-3"
+                    >View Menu</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="container mb-5 ml-md-4">
+              <img
+                src="image/1.png"
+                class="d-block w-50 h-50"
+                alt="..."
+                style="margin: auto"
+              />
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <div class="container mt-5 ml-md-4">
+              <div class="col-md-6 col-sm-12 ftco-animate">
+                <h1 class="mb-4">EG Pizzeria</h1>
+                <h1 class="mb-4">Delicious Italian Pizza</h1>
+                <p>
+                  <a href="order.html" class="btn btn-dark p-3 px-xl-4 py-xl-3"
+                    >Order Now</a
+                  >
+                  <a href="menu.html" class="btn btn-dark p-3 px-xl-4 py-xl-3"
+                    >View Menu</a
+                  >
+                </p>
+              </div>
+            </div>
+            <img
+              src="image/2.png"
+              alt="..."
+              style="margin: auto"
+              class="d-block w-50 h-50"
+            />
+          </div>
+          <div
+            class="carousel-item"
+            data-bs-interval="1000"
+            style="background-image: url(image/3.jpg)"
+          >
+            <div class="container mt-5 ml-md-4">
+              <div class="col-md-6 col-sm-12 ftco-animate">
+                <h1 class="mb-4">EG Pizzeria</h1>
+                <h1 class="mb-4">Delicious Italian Pizza</h1>
+                <p>
+                  <a href="order.html" class="btn btn-dark p-3 px-xl-4 py-xl-3"
+                    >Order Now</a
+                  >
+                  <a href="menu.html" class="btn btn-dark p-3 px-xl-4 py-xl-3"
+                    >View Menu</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <img
+              src="image/pizza-5.jpg"
+              class="d-block w-50 h-50"
+              alt="..."
+              style="margin: auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END slider -->
+    <!-- welcome -->
+    <section
+      class="ftco-about d-md-flex"
+      id="welc"
+      style="background-color: #00000033; color: #ebe8df; margin: 15px 5px"
+    >
+      <div class="one-half img">
+        <img
+          src="image/about.jpg"
+          alt=""
+          style="width: 200%; height: 90%; padding: 10px 10px; margin: 5px 20px"
+        />
+      </div>
+      <div class="one-half ftco-animate" style="text-align: center">
+        <div class="heading-section ftco-animate">
+          <h2 class="mb-4" style="padding: 0px 100px; margin-left: 350px">
+            Welcome to <span class="flaticon-pizza">Pizza</span> A Restaurant
+          </h2>
+          <div>
+            <p
+              style="
+                width: 60%;
+                text-align: center;
+                float: right;
+                margin: 5px 5px;
+              "
+            >
+              Welcome to Pizza A Restaurant, where every slice is a celebration
+              of authentic flavors and warm hospitality. Nestled in the heart of
+              the city, our cozy eatery invites you to savor a diverse menu
+              crafted with the freshest ingredients and a passion for
+              perfection. Whether you're indulging in a classic Margherita,
+              exploring our gourmet options, or creating your own masterpiece,
+              our friendly staff ensures a delightful dining experience. Join us
+              at Pizza A Restaurant, where every meal is a memorable culinary
+              journey.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+    <!--  end welcome -->
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Hot Pizza Meals</h2>
+            <p>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-wrap">
+        <div class="row no-gutters d-flex">
+          <div class="col-lg-4 d-flex ftco-animate">
+            <div class="services-wrap d-flex">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(image/pizza-1.jpg)"
+              ></a>
+              <div class="text p-4">
+                <img
+                  src="image/pizza-1.jpg"
+                  alt=""
+                  style="width: 200px; height: 200px"
+                />
+                <div
+                  style="background-color: #00000033; width: 50%; float: right"
+                >
+                  <h3 style="text-align: center">Italian Pizza</h3>
+                  <p style="text-align: center">
+                    Italian pizza combines a thin crust with fresh tomatoes,
+                    mozzarella, basil, and olive oil for authentic flavor.
+                  </p>
+                  <p class="price" style="text-align: center">
+                    <span style="color: #fac564">$2.90</span>
+                    <a
+                      href="#"
+                      class="ml-2 btn btn-white btn-outline-white"
+                      style="color: #fac564; border: 1px, solid, #fac564"
+                      >Order</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex ftco-animate">
+            <div class="services-wrap d-flex">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(image/pizza-2.jpg)"
+              ></a>
+              <div class="text p-4">
+                <img
+                  src="image/pizza-2.jpg"
+                  alt=""
+                  style="width: 200px; height: 200px"
+                />
+                <div
+                  style="background-color: #00000033; width: 50%; float: right"
+                >
+                  <h3 style="text-align: center">Greek Pizza</h3>
+                  <p style="text-align: center">
+                    Greek pizza is topped with feta, olives, red onions,
+                    tomatoes, spinach, and Mediterranean flavors.
+                  </p>
+                  <p class="price" style="text-align: center">
+                    <span style="color: #fac564">$2.90</span>
+                    <a
+                      href="#"
+                      class="ml-2 btn btn-white btn-outline-white"
+                      style="color: #fac564; border: 1px, solid, #fac564"
+                      >Order</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex ftco-animate">
+            <div class="services-wrap d-flex">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(image/pizza-3.jpg)"
+              ></a>
+              <div class="text p-4">
+                <img
+                  src="image/pizza-3.jpg"
+                  alt=""
+                  style="width: 200px; height: 200px"
+                />
+                <div
+                  style="background-color: #00000033; width: 50%; float: right"
+                >
+                  <h3 style="text-align: center">Caucasian Pizza</h3>
+                  <p style="text-align: center">
+                    Caucasian pizza features a rich blend of cheese, herbs, and
+                    spices, offering unique, robust flavors.
+                  </p>
+                  <p class="price" style="text-align: center">
+                    <span style="color: #fac564">$2.90</span>
+                    <a
+                      href="#"
+                      class="ml-2 btn btn-white btn-outline-white"
+                      style="color: #fac564; border: 1px, solid, #fac564"
+                      >Order</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-flex ftco-animate">
+            <div class="services-wrap d-flex">
+              <a
+                href="#"
+                class="img order-lg-last"
+                style="background-image: url(image/pizza-4.jpg)"
+              ></a>
+              <div class="text p-4">
+                <img
+                  src="image/pizza-4.jpg"
+                  alt=""
+                  style="width: 200px; height: 200px"
+                />
+                <div
+                  style="background-color: #00000033; width: 50%; float: right"
+                >
+                  <h3 style="text-align: center">American Pizza</h3>
+                  <p style="text-align: center">
+                    American pizza boasts diverse styles and toppings, from
+                    classic pepperoni to creative gourmet combinations.
+                  </p>
+                  <p class="price" style="text-align: center">
+                    <span style="color: #fac564">$2.90</span>
+                    <a
+                      href="#"
+                      class="ml-2 btn btn-white btn-outline-white"
+                      style="color: #fac564; border: 1px, solid, #fac564"
+                      >Order</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex ftco-animate">
+            <div class="services-wrap d-flex">
+              <a
+                href="#"
+                class="img order-lg-last"
+                style="background-image: url(image/pizza-5.jpg)"
+              ></a>
+              <div class="text p-4">
+                <img
+                  src="image/pizza-5.jpg"
+                  alt=""
+                  style="width: 200px; height: 200px"
+                />
+                <div
+                  style="background-color: #00000033; width: 50%; float: right"
+                >
+                  <h3 style="text-align: center">Tomatoe Pie</h3>
+                  <p style="text-align: center">
+                    Tomato Pie is a savory delight with fresh tomatoes, cheese,
+                    and herbs on a crispy crust.
+                  </p>
+                  <p class="price" style="text-align: center">
+                    <span style="color: #fac564">$2.90</span>
+                    <a
+                      href="#"
+                      class="ml-2 btn btn-white btn-outline-white"
+                      style="color: #fac564; border: 1px, solid, #fac564"
+                      >Order</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex ftco-animate">
+            <div class="services-wrap d-flex">
+              <a
+                href="#"
+                class="img order-lg-last"
+                style="background-image: url(image/pizza-6.jpg)"
+              ></a>
+              <div class="text p-4">
+                <img
+                  src="image/pizza-6.jpg"
+                  alt=""
+                  style="width: 200px; height: 200px"
+                />
+                <div
+                  style="background-color: #00000033; width: 50%; float: right"
+                >
+                  <h3 style="text-align: center">Margherita</h3>
+                  <p style="text-align: center">
+                    Margherita pizza features fresh tomatoes, mozzarella, basil,
+                    and olive oil on a thin crust.
+                  </p>
+                  <p class="price" style="text-align: center">
+                    <span style="color: #fac564">$2.90</span>
+                    <a
+                      href="#"
+                      class="ml-2 btn btn-white btn-outline-white"
+                      style="color: #fac564; border: 1px, solid, #fac564"
+                      >Order</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu -->
+      <div class="container" id="menu">
+        <div class="row justify-content-center mb-5 pb-3 mt-5 pt-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Our Menu Pricing</h2>
+            <p class="flip">
+              <span class="deg1"></span><span class="deg2"></span
+              ><span class="deg3"></span>
+            </p>
+            <p class="mt-5">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="pricing-entry d-flex ftco-animate">
+              <div
+                class="img"
+                style="background-image: url(image/pizza-1.jpg)"
+              ></div>
+              <div class="desc pl-3">
+                <div class="d-flex text align-items-center">
+                  <img
+                    src="image/pizza-1.jpg"
+                    alt=""
+                    style="width: 100px; height: 80px"
+                  />
+
+                  <h3><span>Italian Pizza</span></h3>
+
+                  <span class="price" style="color: rgb(138, 19, 23)">
+                    $20.00</span
+                  >
+                </div>
+                <div class="d-block">
+                  <p>
+                    typically include fresh tomatoes, mozzarella cheese, basil,
+                    and olive oil, creating a simple yet flavorful culinary
+                    masterpiece.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pricing-entry d-flex ftco-animate">
+              <div
+                class="img"
+                style="background-image: url(image/pizza-2.jpg)"
+              ></div>
+              <div class="desc pl-3">
+                <div class="d-flex text align-items-center">
+                  <img
+                    src="image/pizza-2.jpg"
+                    alt=""
+                    style="width: 100px; height: 80px"
+                  />
+                  <h3><span>Hawaiian Pizza</span></h3>
+                  <span class="price" style="color: rgb(138, 19, 23)"
+                    >$29.00</span
+                  >
+                </div>
+                <div class="d-block">
+                  <p>
+                    Hawaiian pizza features a unique blend of savory ham and
+                    sweet pineapple, creating a distinctive and flavorful
+                    combination
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pricing-entry d-flex ftco-animate">
+              <div
+                class="img"
+                style="background-image: url(image/pizza-3.jpg)"
+              ></div>
+              <div class="desc pl-3">
+                <div class="d-flex text align-items-center">
+                  <img
+                    src="image/pizza-3.jpg"
+                    alt=""
+                    style="width: 100px; height: 80px"
+                  />
+                  <h3><span>Greek Pizza</span></h3>
+                  <span class="price" style="color: rgb(138, 19, 23)"
+                    >$20.00</span
+                  >
+                </div>
+                <div class="d-block">
+                  <p>
+                    Greek pizza is topped with ingredients like feta cheese,
+                    olives, red onions, tomatoes, and spinach, offering a
+                    vibrant and Mediterranean-inspired flavor.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pricing-entry d-flex ftco-animate">
+              <div
+                class="img"
+                style="background-image: url(image/pizza-4.jpg)"
+              ></div>
+              <div class="desc pl-3">
+                <div class="d-flex text align-items-center">
+                  <img
+                    src="image/pizza-4.jpg"
+                    alt=""
+                    style="width: 100px; height: 80px"
+                  />
+                  <h3><span>Bacon Crispy Thins</span></h3>
+                  <span class="price" style="color: rgb(138, 19, 23)"
+                    >$20.00</span
+                  >
+                </div>
+                <div class="d-block">
+                  <p>
+                    Bacon Crispy Thins are topped with crispy bacon, mozzarella
+                    cheese, and a drizzle of tangy ranch dressing, creating a
+                    deliciously savory and crunchy delight.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="pricing-entry d-flex ftco-animate">
+              <div
+                class="img"
+                style="background-image: url(image/pizza-5.jpg)"
+              ></div>
+              <div class="desc pl-3">
+                <div class="d-flex text align-items-center">
+                  <img
+                    src="image/pizza-5.jpg"
+                    alt=""
+                    style="width: 100px; height: 80px"
+                  />
+                  <h3><span>Hawaiian Special</span></h3>
+                  <span class="price" style="color: rgb(138, 19, 23)"
+                    >$49.91</span
+                  >
+                </div>
+                <div class="d-block">
+                  <p>
+                    Hawaiian Special pizza includes a delicious combination of
+                    ham, pineapple, bacon, and extra cheese, enhancing the
+                    classic sweet and savory flavor.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pricing-entry d-flex ftco-animate">
+              <div
+                class="img"
+                style="background-image: url(image/pizza-6.jpg)"
+              ></div>
+              <div class="desc pl-3">
+                <div class="d-flex text align-items-center">
+                  <img
+                    src="image/pizza-6.jpg"
+                    alt=""
+                    style="width: 100px; height: 80px"
+                  />
+                  <h3><span>Ultimate Overload</span></h3>
+                  <span class="price" style="color: rgb(138, 19, 23)"
+                    >$20.00</span
+                  >
+                </div>
+                <div class="d-block">
+                  <p>
+                    Ultimate Overload pizza is piled high with an array of
+                    ingredients, including pepperoni, sausage, mushrooms, green
+                    peppers, onions, and extra cheese, creating a hearty and
+                    satisfying feast.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pricing-entry d-flex ftco-animate">
+              <div
+                class="img"
+                style="background-image: url(image/pizza-7.jpg)"
+              ></div>
+              <div class="desc pl-3">
+                <div class="d-flex text align-items-center">
+                  <img
+                    src="image/pizza-7.jpg"
+                    alt=""
+                    style="width: 100px; height: 80px"
+                  />
+                  <h3><span>Bacon Pizza</span></h3>
+                  <span class="price" style="color: rgb(138, 19, 23)"
+                    >$20.00</span
+                  >
+                </div>
+                <div class="d-block">
+                  <p>
+                    Bacon pizza is topped with crispy bacon, mozzarella cheese,
+                    and often complemented by ingredients like tomatoes, onions,
+                    and a rich tomato sauce, creating a savory and indulgent
+                    treat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pricing-entry d-flex ftco-animate">
+              <div
+                class="img"
+                style="background-image: url(image/pizza-8.jpg)"
+              ></div>
+              <div class="desc pl-3">
+                <div class="d-flex text align-items-center">
+                  <img
+                    src="image/pizza-8.jpg"
+                    alt=""
+                    style="width: 100px; height: 80px"
+                  />
+                  <h3><span>Ham &amp; Pineapple</span></h3>
+                  <span class="price" style="color: rgb(138, 19, 23)"
+                    >$20.00</span
+                  >
+                </div>
+                <div class="d-block">
+                  <p>
+                    Pineapple, known for its sweet and tangy flavor, adds a
+                    refreshing and tropical twist to both savory and sweet
+                    dishes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our service -->
+    <br /><br />
+    <section
+      class="ftco-section ftco-services"
+      style="background-image: url(image/food.png); color: #101315"
+    >
+      <br /><br />
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Our Services</h2>
+            <p>
+              Our pizza restaurant offers exceptional service, including fast
+              delivery, friendly staff, customized toppings, and a welcoming
+              dining atmosphere.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ftco-animate">
+            <div class="media d-block text-center block-6 services">
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-5"
+              >
+                <span
+                  ><img src="image/iii.png" style="width: 40%" alt=""
+                /></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Healthy Foods</h3>
+                <p>
+                  Healthy foods are nutrient-rich, balanced, and promote overall
+                  well-being with fresh, wholesome ingredients.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="media d-block text-center block-6 services">
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-5"
+              >
+                <span><img src="image/i2 (2).png" alt="" /></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Fastest Delivery</h3>
+                <p>
+                  Our fastest delivery ensures your pizza arrives hot and fresh,
+                  right to your doorstep quickly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="media d-block text-center block-6 services">
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-5"
+              >
+                <span><img src="image/if.png" alt="" /></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Original Recipes</h3>
+                <p>
+                  Our original recipes blend tradition and innovation, creating
+                  unforgettable flavors with every bite.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- msg -->
+    <section
+      class="ftco-appointment"
+      id="msg"
+      style="
+        background-color: #121618;
+        padding: 50px 10px;
+        margin: 25px 10px;
+        color: aliceblue;
+      "
+    >
+      <div class="overlay"></div>
+      <div class="container-wrap">
+        <h3 class="mb-6" style="color: #ffff; text-align: center">
+          Message Us
+        </h3>
+        <br />
+        <br />
+
+        <div class="row no-gutters d-md-flex align-items-center">
+          <div class="col-md-6 d-flex align-self-stretch">
+            <div id="map"></div>
+          </div>
+          <div class="col-md-6 appointment ftco-animate">
+            <form action="#" class="appointment-form" id="msgform">
+              <div class="d-md-flex">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First Name"
+                  />
+                </div>
+              </div>
+              <div class="d-me-flex">
+                <div class="form-group">
+                  <input
+                    style="color: white !important"
+                    type="text"
+                    class="form-control"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="3"
+                  class="form-control"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  value="Send Msg"
+                  class="btn btn-primary py-3 px-4"
+                  style="background-color: #ffff; color: #121618"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <footer> -->
+    <footer
+      class="ftco-footer ftco-section img"
+      style="
+        background-color: #101315;
+        color: #dbcdcd;
+        margin: 20px 20px;
+        padding: 70px 0px;
+      "
+    >
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2" style="color: #fac564">About Us</h2>
+              <p style="text-align: center">
+                Our pizza restaurant combines a welcoming atmosphere with
+                expertly crafted pies, offering a delicious dining experience
+                for all.
+              </p>
+              <ul
+                class="ftco-footer-social list-unstyled float-md-left float-lft mt-5"
+              >
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-5 mb-md-5">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2" style="color: #fac564">Services</h2>
+              <ul class="list-unstyled">
+                <li><div class="py-2 d-block">Cooked</div></li>
+                <li><div class="py-2 d-block">Deliver</div></li>
+                <li><div class="py-2 d-block">Quality Foods</div></li>
+                <li><div class="py-2 d-block">Mixed</div></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2" style="color: #fac564">Adress</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li>
+                    <span class="icon icon-map-marker"></span
+                    ><span class="text"
+                      >203 S3edi St. New damitta, Damitta, EG</span
+                    >
+                  </li>
+                  <li>
+                    <a
+                      ><span class="icon icon-phone"></span
+                      ><span class="text" style="color: #fac564"
+                        >+2 392 3929 210</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      ><span class="icon icon-envelope"></span
+                      ><span class="text" style="color: #fac564"
+                        >info@yourdomain.com</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
